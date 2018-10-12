@@ -98,4 +98,11 @@ class close_header {
     }
 }
 
+class Body1 {
+
+    public static function open_body() {
+        return '<body>';
+    }
+}
+
 
