@@ -42,3 +42,24 @@ class recordFactory {
         return $record;
     }
 }
+
+class record {
+
+    public function __construct(Array $fieldNames =null, $values = null) {
+        if (count($fieldNames) == count($values)) {
+            $record = array_combine($fieldNames,$values);
+            foreach ($record as $property => $value) {
+                $this->createProperty($property,$value);
+            }
+        }
+    }
+
+    public function createProperty($name, $value) {
+        $this->{$name} = $value;
+    }
+
+    public function returnArray() {
+        $array = (array) $this;
+        return $array;
+    }
+}
