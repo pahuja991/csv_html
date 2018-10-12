@@ -105,4 +105,13 @@ class Body1 {
     }
 }
 
+class Body2 {
+
+    public static function close_body() {
+        return '</body>';
+    }
+}
+
+
+
 
