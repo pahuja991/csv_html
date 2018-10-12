@@ -135,6 +135,15 @@ class Row_create {
     }
 }
 
+class Row_close {
+
+    public static function Tr2() {
+        return '</tr>';
+    }
+}
+
+
+
 
 
 
