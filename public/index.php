@@ -63,3 +63,13 @@ class record {
         return $array;
     }
 }
+
+
+class Html {
+
+    public static function open_tag() {
+        return '<html>';
+    }
+}
+
+
