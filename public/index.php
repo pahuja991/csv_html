@@ -91,6 +91,11 @@ class create_header {
     }
 }
 
+class close_header {
 
+    public static function closeHead() {
+        return '</head>';
+    }
+}
 
 
