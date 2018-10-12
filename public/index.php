@@ -128,6 +128,14 @@ class Table_close {
 }
 
 
+class Row_create {
+
+    public static function Tr1() {
+        return '<tr>';
+    }
+}
+
+
 
 
 
