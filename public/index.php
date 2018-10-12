@@ -112,6 +112,17 @@ class Body2 {
     }
 }
 
+class Table_create {
+
+    public static function create_table() {
+        return '<table class="table table-bordered table-striped">';
+    }
+}
+
+
+
+
+
 
 
 
