@@ -72,4 +72,11 @@ class Html {
     }
 }
 
+class CloseHtml {
+
+    public static function close_tag() {
+        return '</html>';
+    }
+}
+
 
