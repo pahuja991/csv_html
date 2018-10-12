@@ -120,6 +120,14 @@ class Table_create {
 }
 
 
+class Table_close {
+
+    public static function close_table() {
+        return '</table>';
+    }
+}
+
+
 
 
 
