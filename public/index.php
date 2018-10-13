@@ -172,7 +172,13 @@ class Display {
         }
 }
 
+class table_header {
 
+
+    public static function display_header($header) {
+        return '<th>' .$header. '</th>';
+    }
+}
 
 
 
