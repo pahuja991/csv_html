@@ -226,5 +226,12 @@ class html1 {
     }
 }
 
+class Sys {
+
+    public static function printTable($value) {
+        echo $value;
+    }
+}
+
 
 
