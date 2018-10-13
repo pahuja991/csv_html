@@ -6,8 +6,8 @@ class main {
 
     static public function start($filename) {
         $records =csv::getRecords($filename); // reads csv file
-        $table = html::generateTable($records); // display table
-        system::displayTable($table);
+        $table = html1::generateTable($records); // display table
+        sys::printTable($table);
     }
 }
 
@@ -37,7 +37,7 @@ class csv {
 
 class recordFactory {
 
-    public static  function  create(Array $fieldNames = null, Array $values = null) {
+    public static  function  create($fieldNames = null, $values = null) {
         $record = new record($fieldNames, $values);
         return $record;
     }
@@ -142,7 +142,7 @@ class Row_close {
     }
 }
 
-class create_header {
+class create_header1 {
 
     public static function displayData($value, $tag) {
         return '<'.$tag.'>'. $value . '<'.'/'.$tag.'>';
@@ -155,8 +155,7 @@ class create_header {
 
 
 class Display {
-    public static function display_util() {
-        public static function display_Util($head, $parameter) {
+        public static function display_util($head, $parameter) {
             $display = '';
             foreach ($head as $value) {
                 switch ($parameter) {
@@ -171,8 +170,9 @@ class Display {
             }
             return $display;
         }
+}
 
-    }
+
 
 
 
