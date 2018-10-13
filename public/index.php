@@ -147,7 +147,25 @@ class Row_close {
 
 
 
+class Display {
+    public static function display_util() {
+        public static function display_Util($head, $parameter) {
+            $display = '';
+            foreach ($head as $value) {
+                switch ($parameter) {
+                    case 0:
+                        $display .= table_header::display_header($value);
+                        break;
 
+                    case 1:
+                        $display .= table_column::display_column($value);
+                        break;
+                }
+            }
+            return $display;
+        }
+
+    }
 
 
 
