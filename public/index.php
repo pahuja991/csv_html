@@ -142,6 +142,13 @@ class Row_close {
     }
 }
 
+class create_header {
+
+    public static function displayData($value, $tag) {
+        return '<'.$tag.'>'. $value . '<'.'/'.$tag.'>';
+    }
+}
+
 
 
 
