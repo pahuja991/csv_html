@@ -180,5 +180,51 @@ class table_header {
     }
 }
 
+class table_column {
+
+
+    public static function display_column($column) {
+        return '<td>' .$column. '</td>';
+    }
+}
+
+
+class html1 {
+
+    public static function generateTable($records) {
+        $count =0;
+
+        $print = Html::open_tag();
+        $print .= create_header::openHead();
+        $print .= Body1::open_body();
+        $print .= Table_create::create_table();
+
+        foreach ($records as $record) {
+
+            $array = $record->returnArray();
+            $header = array_keys($array); // header
+            $column = array_values($array); // column
+
+            while($count == 0) {
+                $print .= Row_create::Tr1();
+                $print .= Display::display_util($header, 0);
+                $print .= Row_close::Tr2();
+                $count++;
+            }
+
+            $print .= Row_create::Tr1();
+            $print .= Display::display_util($column, 1);
+            $print .= Row_close::Tr2();
+
+        }
+
+        $print .= Table_close::close_table();
+        $print .= Body2::close_body();
+        $print .= close_header::closeHead();
+        $print .= CloseHtml::close_tag();
+        return $print;
+    }
+}
+
 
 
